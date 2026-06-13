@@ -1,16 +1,38 @@
-# selenium-gui-automation
-Selenium WebDriver GUI Automation | Wipro SDET Capstone. POM framework with 18 TestNG test cases, ExtentReports HTML report, Log4j2 logging, before/after screenshots for every test, covering all GUI elements on testautomationpractice.blogspot.com
-Here's your complete README:
-
-```markdown
 # Selenium GUI Automation Framework
-### Wipro SDET Capstone Project
 
-A professional Selenium WebDriver automation framework built as part of the 
-Wipro SDET (Software Development Engineer in Test) training program. 
-The framework automates all interactive GUI elements on 
-[testautomationpractice.blogspot.com](https://testautomationpractice.blogspot.com) 
-using Java, Maven, and TestNG.
+## Wipro SDET Capstone Project
+
+Selenium WebDriver automation framework built using Java, Maven, and TestNG.
+Covers full GUI automation for https://testautomationpractice.blogspot.com using Page Object Model.
+
+---
+
+## Project Summary
+
+| Item           | Value                      |
+| -------------- | -------------------------- |
+| Total Tests    | 18                         |
+| Framework      | TestNG                     |
+| Design Pattern | Page Object Model          |
+| Reporting      | ExtentReports (HTML)       |
+| Logging        | Log4j2                     |
+| Build Tool     | Maven                      |
+| Screenshots    | Before and After each test |
+
+---
+
+## Tech Stack
+
+| Tool               | Version | Usage                 |
+| ------------------ | ------- | --------------------- |
+| Java               | 11+     | Core language         |
+| Selenium WebDriver | 4.x     | UI automation         |
+| TestNG             | 7.x     | Test execution        |
+| Maven              | 3.x     | Dependency management |
+| WebDriverManager   | 5.x     | Driver setup          |
+| ExtentReports      | 5.x     | Reporting             |
+| Log4j2             | 2.x     | Logging               |
+| Commons IO         | 2.x     | File handling         |
 
 ---
 
@@ -19,199 +41,160 @@ using Java, Maven, and TestNG.
 ```
 selenium-gui-automation/
 │
-├── pom.xml                          ← Maven build + all dependencies
-├── screenshots/                     ← Auto-generated PNG screenshots at runtime
-│   └── TC01_title_before_*.png ...
+├── pom.xml
+├── screenshots/
 ├── test-output/
-│   └── ExtentReport.html            ← Rich HTML report with embedded screenshots
 │
 └── src/
     └── test/
         ├── resources/
-        │   ├── testng.xml           ← TestNG suite definition
-        │   └── log4j2.xml           ← Logging configuration
+        │   ├── testng.xml
+        │   └── log4j2.xml
+        │
         └── java/com/automation/
             ├── tests/
-            │   ├── BaseTest.java    ← @BeforeSuite / @AfterSuite (WebDriver + Report setup)
-            │   └── GuiElementsTest.java  ← 18 @Test methods with screenshots
+            │   ├── BaseTest.java
+            │   └── GuiElementsTest.java
+            │
             ├── pages/
-            │   └── GuiElementsPage.java  ← Page Object Model (all locators & actions)
+            │   └── GuiElementsPage.java
+            │
             └── utils/
-                ├── ScreenshotUtil.java        ← Captures & saves PNG screenshots
-                └── ExtentReportManager.java   ← Singleton HTML report manager
+                ├── ScreenshotUtil.java
+                └── ExtentReportManager.java
 ```
 
 ---
 
-## Tech Stack
+## Test Cases
 
-| Technology | Version | Purpose |
-|---|---|---|
-| Java | 11 | Programming language |
-| Selenium WebDriver | 4.18.1 | Browser automation |
-| TestNG | 7.9.0 | Test framework |
-| Maven | 3.x | Build and dependency management |
-| WebDriverManager | 5.7.0 | Auto ChromeDriver setup |
-| ExtentReports | 5.1.1 | HTML test reporting |
-| Log4j2 | 2.23.1 | Logging |
-| Commons IO | 2.16.1 | File handling |
-
----
-
-## Test Cases — 18 Total
-
-| TC | Test Name | GUI Element | Assertion |
-|---|---|---|---|
-| TC01 | Page Title Validation | Browser title | Title equals expected |
-| TC02 | Name Text Field | Text input | Value matches input |
-| TC03 | Email Text Field | Text input | Value matches input |
-| TC04 | Phone Text Field | Text input | Value matches input |
-| TC05 | Address Textarea | Textarea | Value matches input |
-| TC06 | Radio Button | Gender radio | isSelected() = true |
-| TC07 | Checkbox | Sunday checkbox | isSelected() = true |
-| TC08 | Dropdowns | Country, Color, Animal | Selected values verified |
-| TC09 | Date Pickers | 3 date pickers | Dates set correctly |
-| TC10 | File Upload | Single + Multiple | Files uploaded |
-| TC11 | Wikipedia Search | Search widget | Input + Enter submitted |
-| TC12 | Dynamic Button | START/STOP toggle | Button toggles correctly |
-| TC13 | Mouse Hover | Point Me button | Hover performed |
-| TC14 | Double Click | Copy Text button | Field2 = Field1 value |
-| TC15 | Drag and Drop | Draggable to droppable | Target text not empty |
-| TC16 | Slider | jQuery UI slider | Slider moved 100px |
-| TC17 | Alert Handling | Simple, Confirm, Prompt | All 3 alerts handled |
-| TC18 | Misc Features | ComboBox, Links, New Tab, Popup, Scroll | All actions completed |
+| TC ID | Test         | Element              | Validation       |
+| ----- | ------------ | -------------------- | ---------------- |
+| TC01  | Title Check  | Page Title           | assertEquals     |
+| TC02  | Name Field   | Input                | Value match      |
+| TC03  | Email Field  | Input                | Value match      |
+| TC04  | Phone Field  | Input                | Value match      |
+| TC05  | Address      | Textarea             | Value match      |
+| TC06  | Radio        | Gender               | isSelected       |
+| TC07  | Checkbox     | Sunday               | isSelected       |
+| TC08  | Dropdown     | Country/Color/Animal | Selected value   |
+| TC09  | Date Picker  | Calendar             | Correct date     |
+| TC10  | Upload       | File Input           | File present     |
+| TC11  | Search       | Wikipedia            | Input submit     |
+| TC12  | Button       | Start/Stop           | Toggle           |
+| TC13  | Hover        | Mouse                | Action performed |
+| TC14  | Double Click | Copy                 | Text copied      |
+| TC15  | Drag Drop    | UI                   | Target updated   |
+| TC16  | Slider       | Range                | Position changed |
+| TC17  | Alerts       | JS Alerts            | Handled          |
+| TC18  | Misc         | Links/Scroll         | Executed         |
 
 ---
 
-## Framework Architecture
+## Architecture
 
-### Page Object Model (POM)
-All web element locators and actions are centralized in `GuiElementsPage.java`.
-Tests never interact with the browser directly — they call page methods only.
-This makes the framework easy to maintain when locators change.
-
-### BaseTest
-Handles browser lifecycle:
-- `@BeforeSuite` — launches Chrome, sets implicit wait, opens URL, initializes report
-- `@AfterSuite` — closes browser, flushes ExtentReport to disk
-
-### ExtentReportManager
-Singleton class managing the HTML report:
-- Creates one report instance for the entire test run
-- Each `@Test` gets its own node with PASS/FAIL status
-- Screenshots embedded directly inside each test node
-
-### ScreenshotUtil
-Captures full-page screenshots at any point during execution:
-- Auto-creates `screenshots/` folder if not present
-- Filename format: `stepName_yyyyMMdd_HHmmss_SSS.png`
-- Returns absolute path for embedding into ExtentReport
+| Layer         | Responsibility              |
+| ------------- | --------------------------- |
+| Test Layer    | Contains TestNG test cases  |
+| Page Layer    | Stores locators and actions |
+| Utility Layer | Screenshots and reporting   |
+| Base Layer    | Setup and teardown          |
 
 ---
 
-## Prerequisites
+## Execution Flow
 
-- Java JDK 11 or higher
-- Maven 3.x
-- Google Chrome browser
-- Eclipse IDE (or any Java IDE)
-- Internet connection (WebDriverManager auto-downloads ChromeDriver)
+1. BaseTest запускает browser
+2. URL loaded
+3. TestNG executes test cases
+4. Each test calls Page methods
+5. Screenshots captured
+6. Results logged to ExtentReport
+7. Browser closed
 
 ---
 
-## Setup and Installation
+## Setup
 
-**1. Clone the repository**
-```bash
+### Clone
+
+```
 git clone https://github.com/YOUR_USERNAME/selenium-gui-automation.git
 ```
 
-**2. Import into Eclipse**
-```
-File → Import → Maven → Existing Maven Projects
-→ Browse to cloned folder → Finish
-```
+### Import
 
-**3. Update Maven**
-```
-Right-click project → Maven → Update Project → Force Update → OK
-```
+* Open Eclipse
+* Import → Maven → Existing Project
+* Select folder
 
-**4. Run Maven build**
+### Build
+
 ```
-Right-click project → Run As → Maven clean
-Right-click project → Run As → Maven install
+mvn clean install
 ```
 
 ---
 
-## How to Run Tests
+## Run Tests
 
-**Option 1 — Run via TestNG directly (Eclipse)**
-```
-Right-click testng.xml → Run As → TestNG Suite
-```
-
-**Option 2 — Run via Maven**
-```
-Right-click project → Run As → Maven install
-```
+| Method | Command           |
+| ------ | ----------------- |
+| TestNG | Run testng.xml    |
+| Maven  | mvn clean install |
 
 ---
 
-## Test Reports
+## Reports
 
-After execution, open the HTML report:
-```
-test-output/ExtentReport.html
-→ Right-click → Open With → Web Browser
-```
-
-Report includes:
-- Pass/Fail status for all 18 tests
-- System info (Browser, Environment, Tester name)
-- Before and after screenshots for every test step
-- Execution timestamps and duration
-
-Screenshots are saved at:
-```
-screenshots/TC01_title_before_*.png
-screenshots/TC02_name_after_*.png
-... and so on for all 18 test cases
-```
+| File                          | Description      |
+| ----------------------------- | ---------------- |
+| test-output/ExtentReport.html | Main HTML report |
+| screenshots/                  | Test screenshots |
 
 ---
 
-## Key Selenium Concepts Covered
+## Features
 
-- WebDriver setup using WebDriverManager
-- Locators: By.id, By.xpath, By.tagName, By.cssSelector
-- Select class for dropdowns
-- Actions class: doubleClick, moveToElement, dragAndDrop, dragAndDropBy
-- JavascriptExecutor: set values, scroll up/down
-- Alert handling: accept, dismiss, sendKeys
-- File upload via sendKeys with absolute path
-- Implicit and Explicit waits (WebDriverWait + ExpectedConditions)
-- TakesScreenshot interface
-- Page Object Model design pattern
-- TestNG annotations: @BeforeSuite, @AfterSuite, @BeforeClass, @Test
-- TestNG assertions: assertEquals, assertTrue, assertFalse
+* WebDriverManager auto setup
+* No manual driver config
+* Full GUI coverage
+* Clean POM structure
+* Reusable components
+* Screenshot tracking
+* HTML reporting
+
+---
+
+## Key Concepts
+
+| Concept     | Usage                   |
+| ----------- | ----------------------- |
+| Locators    | id, xpath, css          |
+| Actions     | hover, drag, drop       |
+| Alerts      | accept, dismiss         |
+| Waits       | implicit, explicit      |
+| JS Executor | scroll, input           |
+| TestNG      | annotations, assertions |
 
 ---
 
 ## Author
 
-**Sourav Singh**  
-SDET Trainee — Wipro Limited  
-Training Program: Software Development Engineer in Test  
+| Name        | Role         |
+| ----------- | ------------ |
+| Riyaz Shaik | SDET Trainee |
+
+---
+
+## Notes
+
+* test-output and target folders should be ignored in Git
+* Screenshots generated at runtime
+* Chrome required
 
 ---
 
 ## License
 
-This project is developed for educational purposes as part of Wipro SDET training.
-```
-
----
-
-Copy this entire content, create a file named `README.md` in your project root folder, paste it in, and push to GitHub.
+Educational use only

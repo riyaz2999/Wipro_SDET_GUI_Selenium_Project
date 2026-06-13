@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
+              <span class="suite-name border-passed">Default suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
+                    <span>C:\Users\riyaz\AppData\Local\Temp\testng-eclipse--220906666\testng-customsuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">18 methods,   18 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.automation.tests.GuiElementsTest" class="method navigator-link" hash-for-method="tc01_PageTitleValidation">tc01_PageTitleValidation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.automation.tests.GuiElementsTest" class="method navigator-link" hash-for-method="tc02_NameField">tc02_NameField</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.automation.tests.GuiElementsTest" class="method navigator-link" hash-for-method="tc03_EmailField">tc03_EmailField</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.automation.tests.GuiElementsTest" class="method navigator-link" hash-for-method="tc04_PhoneField">tc04_PhoneField</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.automation.tests.GuiElementsTest" class="method navigator-link" hash-for-method="tc05_AddressField">tc05_AddressField</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.automation.tests.GuiElementsTest" class="method navigator-link" hash-for-method="tc06_RadioButton">tc06_RadioButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.automation.tests.GuiElementsTest" class="method navigator-link" hash-for-method="tc07_Checkbox">tc07_Checkbox</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.automation.tests.GuiElementsTest" class="method navigator-link" hash-for-method="tc08_Dropdowns">tc08_Dropdowns</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.automation.tests.GuiElementsTest" class="method navigator-link" hash-for-method="tc09_DatePickers">tc09_DatePickers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.automation.tests.GuiElementsTest" class="method navigator-link" hash-for-method="tc10_FileUpload">tc10_FileUpload</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.automation.tests.GuiElementsTest" class="method navigator-link" hash-for-method="tc11_WikipediaSearch">tc11_WikipediaSearch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.automation.tests.GuiElementsTest" class="method navigator-link" hash-for-method="tc12_DynamicButton">tc12_DynamicButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.automation.tests.GuiElementsTest" class="method navigator-link" hash-for-method="tc13_MouseHover">tc13_MouseHover</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.automation.tests.GuiElementsTest" class="method navigator-link" hash-for-method="tc14_DoubleClick">tc14_DoubleClick</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.automation.tests.GuiElementsTest" class="method navigator-link" hash-for-method="tc15_DragAndDrop">tc15_DragAndDrop</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.automation.tests.GuiElementsTest" class="method navigator-link" hash-for-method="tc16_Slider">tc16_Slider</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.automation.tests.GuiElementsTest" class="method navigator-link" hash-for-method="tc17_Alerts">tc17_Alerts</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.automation.tests.GuiElementsTest" class="method navigator-link" hash-for-method="tc18_MiscFeatures">tc18_MiscFeatures</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.automation.tests.GuiElementsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc01_PageTitleValidation">
+                  </a> <!-- tc01_PageTitleValidation -->
+                  <span class="method-name">tc01_PageTitleValidation</span>
+                  <em>
+(Validate page title of the application)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc02_NameField">
+                  </a> <!-- tc02_NameField -->
+                  <span class="method-name">tc02_NameField</span>
+                  <em>
+(Enter text in the Name field)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc03_EmailField">
+                  </a> <!-- tc03_EmailField -->
+                  <span class="method-name">tc03_EmailField</span>
+                  <em>
+(Enter text in the Email field)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc04_PhoneField">
+                  </a> <!-- tc04_PhoneField -->
+                  <span class="method-name">tc04_PhoneField</span>
+                  <em>
+(Enter text in the Phone field)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc05_AddressField">
+                  </a> <!-- tc05_AddressField -->
+                  <span class="method-name">tc05_AddressField</span>
+                  <em>
+(Enter text in the Address textarea)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc06_RadioButton">
+                  </a> <!-- tc06_RadioButton -->
+                  <span class="method-name">tc06_RadioButton</span>
+                  <em>
+(Select Male radio button)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc07_Checkbox">
+                  </a> <!-- tc07_Checkbox -->
+                  <span class="method-name">tc07_Checkbox</span>
+                  <em>
+(Select Sunday checkbox)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc08_Dropdowns">
+                  </a> <!-- tc08_Dropdowns -->
+                  <span class="method-name">tc08_Dropdowns</span>
+                  <em>
+(Select Country, Color and Animal dropdowns)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc09_DatePickers">
+                  </a> <!-- tc09_DatePickers -->
+                  <span class="method-name">tc09_DatePickers</span>
+                  <em>
+(Set all 3 date pickers)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc10_FileUpload">
+                  </a> <!-- tc10_FileUpload -->
+                  <span class="method-name">tc10_FileUpload</span>
+                  <em>
+(Upload single and multiple files)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc11_WikipediaSearch">
+                  </a> <!-- tc11_WikipediaSearch -->
+                  <span class="method-name">tc11_WikipediaSearch</span>
+                  <em>
+(Search Selenium in Wikipedia widget)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc12_DynamicButton">
+                  </a> <!-- tc12_DynamicButton -->
+                  <span class="method-name">tc12_DynamicButton</span>
+                  <em>
+(Toggle Dynamic START/STOP button)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc13_MouseHover">
+                  </a> <!-- tc13_MouseHover -->
+                  <span class="method-name">tc13_MouseHover</span>
+                  <em>
+(Hover over Point Me button)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc14_DoubleClick">
+                  </a> <!-- tc14_DoubleClick -->
+                  <span class="method-name">tc14_DoubleClick</span>
+                  <em>
+(Double click Copy Text button to copy field1 to field2)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc15_DragAndDrop">
+                  </a> <!-- tc15_DragAndDrop -->
+                  <span class="method-name">tc15_DragAndDrop</span>
+                  <em>
+(Drag draggable element onto droppable target)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc16_Slider">
+                  </a> <!-- tc16_Slider -->
+                  <span class="method-name">tc16_Slider</span>
+                  <em>
+(Move the slider 100px to the right)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc17_Alerts">
+                  </a> <!-- tc17_Alerts -->
+                  <span class="method-name">tc17_Alerts</span>
+                  <em>
+(Handle Simple, Confirm and Prompt alerts)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="tc18_MiscFeatures">
+                  </a> <!-- tc18_MiscFeatures -->
+                  <span class="method-name">tc18_MiscFeatures</span>
+                  <em>
+(Hyperlink count, scroll, combobox, new tab, popup)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\riyaz\AppData\Local\Temp\testng-eclipse--220906666\testng-customsuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.automation.tests.GuiElementsTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Default test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(18);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'tc12_DynamicButton')
+data.setCell(0, 2, 'com.automation.tests.GuiElementsTest')
+data.setCell(0, 3, 5224);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'tc18_MiscFeatures')
+data.setCell(1, 2, 'com.automation.tests.GuiElementsTest')
+data.setCell(1, 3, 4956);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'tc17_Alerts')
+data.setCell(2, 2, 'com.automation.tests.GuiElementsTest')
+data.setCell(2, 3, 3738);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'tc09_DatePickers')
+data.setCell(3, 2, 'com.automation.tests.GuiElementsTest')
+data.setCell(3, 3, 3355);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'tc08_Dropdowns')
+data.setCell(4, 2, 'com.automation.tests.GuiElementsTest')
+data.setCell(4, 3, 3079);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'tc14_DoubleClick')
+data.setCell(5, 2, 'com.automation.tests.GuiElementsTest')
+data.setCell(5, 3, 2272);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'tc16_Slider')
+data.setCell(6, 2, 'com.automation.tests.GuiElementsTest')
+data.setCell(6, 3, 1887);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'tc15_DragAndDrop')
+data.setCell(7, 2, 'com.automation.tests.GuiElementsTest')
+data.setCell(7, 3, 1872);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'tc10_FileUpload')
+data.setCell(8, 2, 'com.automation.tests.GuiElementsTest')
+data.setCell(8, 3, 1797);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'tc13_MouseHover')
+data.setCell(9, 2, 'com.automation.tests.GuiElementsTest')
+data.setCell(9, 3, 1685);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'tc02_NameField')
+data.setCell(10, 2, 'com.automation.tests.GuiElementsTest')
+data.setCell(10, 3, 1318);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'tc11_WikipediaSearch')
+data.setCell(11, 2, 'com.automation.tests.GuiElementsTest')
+data.setCell(11, 3, 1297);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'tc03_EmailField')
+data.setCell(12, 2, 'com.automation.tests.GuiElementsTest')
+data.setCell(12, 3, 1241);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'tc06_RadioButton')
+data.setCell(13, 2, 'com.automation.tests.GuiElementsTest')
+data.setCell(13, 3, 1154);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'tc05_AddressField')
+data.setCell(14, 2, 'com.automation.tests.GuiElementsTest')
+data.setCell(14, 3, 1153);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'tc04_PhoneField')
+data.setCell(15, 2, 'com.automation.tests.GuiElementsTest')
+data.setCell(15, 3, 1140);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'tc07_Checkbox')
+data.setCell(16, 2, 'com.automation.tests.GuiElementsTest')
+data.setCell(16, 3, 1049);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'tc01_PageTitleValidation')
+data.setCell(17, 2, 'com.automation.tests.GuiElementsTest')
+data.setCell(17, 3, 768);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 38 seconds</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.automation.tests.GuiElementsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-class before">
+                <span class="method-name">initPage</span>
+                <span class="method-start">8379 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">tc01_PageTitleValidation</span>
+                <span class="method-start">8394 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tc02_NameField</span>
+                <span class="method-start">9164 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tc03_EmailField</span>
+                <span class="method-start">10482 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tc04_PhoneField</span>
+                <span class="method-start">11725 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tc05_AddressField</span>
+                <span class="method-start">12867 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tc06_RadioButton</span>
+                <span class="method-start">14022 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tc07_Checkbox</span>
+                <span class="method-start">15181 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tc08_Dropdowns</span>
+                <span class="method-start">16246 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tc09_DatePickers</span>
+                <span class="method-start">19327 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tc10_FileUpload</span>
+                <span class="method-start">22695 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tc11_WikipediaSearch</span>
+                <span class="method-start">24495 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tc12_DynamicButton</span>
+                <span class="method-start">25793 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tc13_MouseHover</span>
+                <span class="method-start">31019 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tc14_DoubleClick</span>
+                <span class="method-start">32706 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tc15_DragAndDrop</span>
+                <span class="method-start">34978 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tc16_Slider</span>
+                <span class="method-start">36852 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tc17_Alerts</span>
+                <span class="method-start">38740 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">tc18_MiscFeatures</span>
+                <span class="method-start">42478 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-suite after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">47467 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

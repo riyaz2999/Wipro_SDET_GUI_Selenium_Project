@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [GUI Elements Automation Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="testautomationpractice.blogspot.com – Full GUI Suite(failed)" verbose="0">
+    <classes>
+      <class name="com.automation.tests.GuiElementsTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="initPage"/>
+          <include name="setUp"/>
+          <include name="tc07_Checkbox"/>
+        </methods>
+      </class> <!-- com.automation.tests.GuiElementsTest -->
+    </classes>
+  </test> <!-- testautomationpractice.blogspot.com – Full GUI Suite(failed) -->
+</suite> <!-- Failed suite [GUI Elements Automation Suite] -->

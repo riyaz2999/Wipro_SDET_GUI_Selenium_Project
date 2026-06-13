@@ -1,0 +1,170 @@
+<html>
+<head>
+<title>TestNG:  GUI Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>GUI Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>18/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Jun 11 18:48:55 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>38 seconds (38646 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.automation.tests.GuiElementsTest.tc04_PhoneField()'><b>tc04_PhoneField</b><br>Test class: com.automation.tests.GuiElementsTest<br>Test method: Enter text in the Phone field</td>
+<td></td>
+<td>1</td>
+<td>com.automation.tests.GuiElementsTest@6989da5e</td></tr>
+<tr>
+<td title='com.automation.tests.GuiElementsTest.tc17_Alerts()'><b>tc17_Alerts</b><br>Test class: com.automation.tests.GuiElementsTest<br>Test method: Handle Simple, Confirm and Prompt alerts</td>
+<td></td>
+<td>3</td>
+<td>com.automation.tests.GuiElementsTest@6989da5e</td></tr>
+<tr>
+<td title='com.automation.tests.GuiElementsTest.tc18_MiscFeatures()'><b>tc18_MiscFeatures</b><br>Test class: com.automation.tests.GuiElementsTest<br>Test method: Hyperlink count, scroll, combobox, new tab, popup</td>
+<td></td>
+<td>4</td>
+<td>com.automation.tests.GuiElementsTest@6989da5e</td></tr>
+<tr>
+<td title='com.automation.tests.GuiElementsTest.tc14_DoubleClick()'><b>tc14_DoubleClick</b><br>Test class: com.automation.tests.GuiElementsTest<br>Test method: Double click Copy Text button to copy field1 to field2</td>
+<td></td>
+<td>2</td>
+<td>com.automation.tests.GuiElementsTest@6989da5e</td></tr>
+<tr>
+<td title='com.automation.tests.GuiElementsTest.tc13_MouseHover()'><b>tc13_MouseHover</b><br>Test class: com.automation.tests.GuiElementsTest<br>Test method: Hover over Point Me button</td>
+<td></td>
+<td>1</td>
+<td>com.automation.tests.GuiElementsTest@6989da5e</td></tr>
+<tr>
+<td title='com.automation.tests.GuiElementsTest.tc15_DragAndDrop()'><b>tc15_DragAndDrop</b><br>Test class: com.automation.tests.GuiElementsTest<br>Test method: Drag draggable element onto droppable target</td>
+<td></td>
+<td>1</td>
+<td>com.automation.tests.GuiElementsTest@6989da5e</td></tr>
+<tr>
+<td title='com.automation.tests.GuiElementsTest.tc12_DynamicButton()'><b>tc12_DynamicButton</b><br>Test class: com.automation.tests.GuiElementsTest<br>Test method: Toggle Dynamic START/STOP button</td>
+<td></td>
+<td>5</td>
+<td>com.automation.tests.GuiElementsTest@6989da5e</td></tr>
+<tr>
+<td title='com.automation.tests.GuiElementsTest.tc10_FileUpload()'><b>tc10_FileUpload</b><br>Test class: com.automation.tests.GuiElementsTest<br>Test method: Upload single and multiple files</td>
+<td></td>
+<td>1</td>
+<td>com.automation.tests.GuiElementsTest@6989da5e</td></tr>
+<tr>
+<td title='com.automation.tests.GuiElementsTest.tc02_NameField()'><b>tc02_NameField</b><br>Test class: com.automation.tests.GuiElementsTest<br>Test method: Enter text in the Name field</td>
+<td></td>
+<td>1</td>
+<td>com.automation.tests.GuiElementsTest@6989da5e</td></tr>
+<tr>
+<td title='com.automation.tests.GuiElementsTest.tc01_PageTitleValidation()'><b>tc01_PageTitleValidation</b><br>Test class: com.automation.tests.GuiElementsTest<br>Test method: Validate page title of the application</td>
+<td></td>
+<td>0</td>
+<td>com.automation.tests.GuiElementsTest@6989da5e</td></tr>
+<tr>
+<td title='com.automation.tests.GuiElementsTest.tc03_EmailField()'><b>tc03_EmailField</b><br>Test class: com.automation.tests.GuiElementsTest<br>Test method: Enter text in the Email field</td>
+<td></td>
+<td>1</td>
+<td>com.automation.tests.GuiElementsTest@6989da5e</td></tr>
+<tr>
+<td title='com.automation.tests.GuiElementsTest.tc11_WikipediaSearch()'><b>tc11_WikipediaSearch</b><br>Test class: com.automation.tests.GuiElementsTest<br>Test method: Search Selenium in Wikipedia widget</td>
+<td></td>
+<td>1</td>
+<td>com.automation.tests.GuiElementsTest@6989da5e</td></tr>
+<tr>
+<td title='com.automation.tests.GuiElementsTest.tc06_RadioButton()'><b>tc06_RadioButton</b><br>Test class: com.automation.tests.GuiElementsTest<br>Test method: Select Male radio button</td>
+<td></td>
+<td>1</td>
+<td>com.automation.tests.GuiElementsTest@6989da5e</td></tr>
+<tr>
+<td title='com.automation.tests.GuiElementsTest.tc09_DatePickers()'><b>tc09_DatePickers</b><br>Test class: com.automation.tests.GuiElementsTest<br>Test method: Set all 3 date pickers</td>
+<td></td>
+<td>3</td>
+<td>com.automation.tests.GuiElementsTest@6989da5e</td></tr>
+<tr>
+<td title='com.automation.tests.GuiElementsTest.tc05_AddressField()'><b>tc05_AddressField</b><br>Test class: com.automation.tests.GuiElementsTest<br>Test method: Enter text in the Address textarea</td>
+<td></td>
+<td>1</td>
+<td>com.automation.tests.GuiElementsTest@6989da5e</td></tr>
+<tr>
+<td title='com.automation.tests.GuiElementsTest.tc08_Dropdowns()'><b>tc08_Dropdowns</b><br>Test class: com.automation.tests.GuiElementsTest<br>Test method: Select Country, Color and Animal dropdowns</td>
+<td></td>
+<td>3</td>
+<td>com.automation.tests.GuiElementsTest@6989da5e</td></tr>
+<tr>
+<td title='com.automation.tests.GuiElementsTest.tc07_Checkbox()'><b>tc07_Checkbox</b><br>Test class: com.automation.tests.GuiElementsTest<br>Test method: Select Sunday checkbox</td>
+<td></td>
+<td>1</td>
+<td>com.automation.tests.GuiElementsTest@6989da5e</td></tr>
+<tr>
+<td title='com.automation.tests.GuiElementsTest.tc16_Slider()'><b>tc16_Slider</b><br>Test class: com.automation.tests.GuiElementsTest<br>Test method: Move the slider 100px to the right</td>
+<td></td>
+<td>1</td>
+<td>com.automation.tests.GuiElementsTest@6989da5e</td></tr>
+</table><p>
+</body>
+</html>

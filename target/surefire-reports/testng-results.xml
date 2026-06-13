@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="18" passed="17" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-06-08T17:55:39 IST" name="GUI Elements Automation Suite" finished-at="2026-06-08T17:56:28 IST" duration-ms="48963">
+    <groups>
+    </groups>
+    <test started-at="2026-06-08T17:55:39 IST" name="testautomationpractice.blogspot.com – Full GUI Suite" finished-at="2026-06-08T17:56:28 IST" duration-ms="48963">
+      <class name="com.automation.tests.GuiElementsTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automation.tests.GuiElementsTest@8f4ea7c]" started-at="2026-06-08T17:55:33 IST" name="setUp" finished-at="2026-06-08T17:55:39 IST" duration-ms="5778" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:com.automation.tests.GuiElementsTest@8f4ea7c]" started-at="2026-06-08T17:55:39 IST" name="initPage" finished-at="2026-06-08T17:55:39 IST" duration-ms="22" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="tc01_PageTitleValidation()[pri:1, instance:com.automation.tests.GuiElementsTest@8f4ea7c]" started-at="2026-06-08T17:55:39 IST" name="tc01_PageTitleValidation" description="Validate page title of the application" finished-at="2026-06-08T17:55:40 IST" duration-ms="627" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc01_PageTitleValidation -->
+        <test-method signature="tc02_NameField()[pri:2, instance:com.automation.tests.GuiElementsTest@8f4ea7c]" started-at="2026-06-08T17:55:40 IST" name="tc02_NameField" description="Enter text in the Name field" finished-at="2026-06-08T17:55:41 IST" duration-ms="1369" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc02_NameField -->
+        <test-method signature="tc03_EmailField()[pri:3, instance:com.automation.tests.GuiElementsTest@8f4ea7c]" started-at="2026-06-08T17:55:41 IST" name="tc03_EmailField" description="Enter text in the Email field" finished-at="2026-06-08T17:55:42 IST" duration-ms="1164" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc03_EmailField -->
+        <test-method signature="tc04_PhoneField()[pri:4, instance:com.automation.tests.GuiElementsTest@8f4ea7c]" started-at="2026-06-08T17:55:42 IST" name="tc04_PhoneField" description="Enter text in the Phone field" finished-at="2026-06-08T17:55:43 IST" duration-ms="1046" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc04_PhoneField -->
+        <test-method signature="tc05_AddressField()[pri:5, instance:com.automation.tests.GuiElementsTest@8f4ea7c]" started-at="2026-06-08T17:55:43 IST" name="tc05_AddressField" description="Enter text in the Address textarea" finished-at="2026-06-08T17:55:44 IST" duration-ms="1150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc05_AddressField -->
+        <test-method signature="tc06_RadioButton()[pri:6, instance:com.automation.tests.GuiElementsTest@8f4ea7c]" started-at="2026-06-08T17:55:44 IST" name="tc06_RadioButton" description="Select Male radio button" finished-at="2026-06-08T17:55:45 IST" duration-ms="1049" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc06_RadioButton -->
+        <test-method signature="tc07_Checkbox()[pri:7, instance:com.automation.tests.GuiElementsTest@8f4ea7c]" started-at="2026-06-08T17:55:45 IST" name="tc07_Checkbox" description="Select Sunday checkbox" finished-at="2026-06-08T17:55:56 IST" duration-ms="10654" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#Saturday"}
+  (Session info: chrome=148.0.7778.217)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [eec6c949ecadbc54529e22c3bbbbc7e9, findElement {value=Saturday, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.217, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\riyaz\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59755}, goog:processID: 16056, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59755/devtoo..., se:cdpVersion: 148.0.7778.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: eec6c949ecadbc54529e22c3bbbbc7e9]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#Saturday"}
+  (Session info: chrome=148.0.7778.217)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [eec6c949ecadbc54529e22c3bbbbc7e9, findElement {value=Saturday, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.217, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\riyaz\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59755}, goog:processID: 16056, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59755/devtoo..., se:cdpVersion: 148.0.7778.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: eec6c949ecadbc54529e22c3bbbbc7e9
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+at com.automation.pages.GuiElementsPage.checkDay(GuiElementsPage.java:124)
+at com.automation.tests.GuiElementsTest.tc07_Checkbox(GuiElementsTest.java:254)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc07_Checkbox -->
+        <test-method signature="tc08_Dropdowns()[pri:8, instance:com.automation.tests.GuiElementsTest@8f4ea7c]" started-at="2026-06-08T17:55:56 IST" name="tc08_Dropdowns" description="Select Country, Color and Animal dropdowns" finished-at="2026-06-08T17:55:59 IST" duration-ms="3093" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc08_Dropdowns -->
+        <test-method signature="tc09_DatePickers()[pri:9, instance:com.automation.tests.GuiElementsTest@8f4ea7c]" started-at="2026-06-08T17:55:59 IST" name="tc09_DatePickers" description="Set all 3 date pickers" finished-at="2026-06-08T17:56:04 IST" duration-ms="4732" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc09_DatePickers -->
+        <test-method signature="tc10_FileUpload()[pri:10, instance:com.automation.tests.GuiElementsTest@8f4ea7c]" started-at="2026-06-08T17:56:04 IST" name="tc10_FileUpload" description="Upload single and multiple files" finished-at="2026-06-08T17:56:06 IST" duration-ms="1794" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc10_FileUpload -->
+        <test-method signature="tc11_WikipediaSearch()[pri:11, instance:com.automation.tests.GuiElementsTest@8f4ea7c]" started-at="2026-06-08T17:56:06 IST" name="tc11_WikipediaSearch" description="Search Selenium in Wikipedia widget" finished-at="2026-06-08T17:56:07 IST" duration-ms="1313" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc11_WikipediaSearch -->
+        <test-method signature="tc12_DynamicButton()[pri:12, instance:com.automation.tests.GuiElementsTest@8f4ea7c]" started-at="2026-06-08T17:56:07 IST" name="tc12_DynamicButton" description="Toggle Dynamic START/STOP button" finished-at="2026-06-08T17:56:12 IST" duration-ms="5107" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc12_DynamicButton -->
+        <test-method signature="tc13_MouseHover()[pri:13, instance:com.automation.tests.GuiElementsTest@8f4ea7c]" started-at="2026-06-08T17:56:12 IST" name="tc13_MouseHover" description="Hover over Point Me button" finished-at="2026-06-08T17:56:14 IST" duration-ms="1668" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc13_MouseHover -->
+        <test-method signature="tc14_DoubleClick()[pri:14, instance:com.automation.tests.GuiElementsTest@8f4ea7c]" started-at="2026-06-08T17:56:14 IST" name="tc14_DoubleClick" description="Double click Copy Text button to copy field1 to field2" finished-at="2026-06-08T17:56:16 IST" duration-ms="2157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc14_DoubleClick -->
+        <test-method signature="tc15_DragAndDrop()[pri:15, instance:com.automation.tests.GuiElementsTest@8f4ea7c]" started-at="2026-06-08T17:56:16 IST" name="tc15_DragAndDrop" description="Drag draggable element onto droppable target" finished-at="2026-06-08T17:56:18 IST" duration-ms="1862" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc15_DragAndDrop -->
+        <test-method signature="tc16_Slider()[pri:16, instance:com.automation.tests.GuiElementsTest@8f4ea7c]" started-at="2026-06-08T17:56:18 IST" name="tc16_Slider" description="Move the slider 100px to the right" finished-at="2026-06-08T17:56:20 IST" duration-ms="1864" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc16_Slider -->
+        <test-method signature="tc17_Alerts()[pri:17, instance:com.automation.tests.GuiElementsTest@8f4ea7c]" started-at="2026-06-08T17:56:20 IST" name="tc17_Alerts" description="Handle Simple, Confirm and Prompt alerts" finished-at="2026-06-08T17:56:23 IST" duration-ms="3443" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc17_Alerts -->
+        <test-method signature="tc18_MiscFeatures()[pri:18, instance:com.automation.tests.GuiElementsTest@8f4ea7c]" started-at="2026-06-08T17:56:23 IST" name="tc18_MiscFeatures" description="Hyperlink count, scroll, combobox, new tab, popup" finished-at="2026-06-08T17:56:28 IST" duration-ms="4783" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc18_MiscFeatures -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.tests.GuiElementsTest@8f4ea7c]" started-at="2026-06-08T17:56:28 IST" name="tearDown" finished-at="2026-06-08T17:56:29 IST" duration-ms="763" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.automation.tests.GuiElementsTest -->
+    </test> <!-- testautomationpractice.blogspot.com – Full GUI Suite -->
+  </suite> <!-- GUI Elements Automation Suite -->
+</testng-results>

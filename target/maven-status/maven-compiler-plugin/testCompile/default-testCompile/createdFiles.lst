@@ -1,0 +1,5 @@
+com\automation\tests\BaseTest.class
+com\automation\tests\GuiElementsTest.class
+com\automation\utils\ScreenshotUtil.class
+com\automation\pages\GuiElementsPage.class
+com\automation\utils\ExtentReportManager.class

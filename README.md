@@ -178,12 +178,11 @@ mvn clean install
 | TestNG      | annotations, assertions |
 
 ---
-
 ## Author
 
-| Name        | Role         |
-| ----------- | ------------ |
-| Riyaz Shaik | SDET Trainee |
+> Riyaz Shaik  
+> Software Development Engineer in Test (Trainee) 
+> Wipro Limited
 
 ---
 
